@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title> JQuery Selectors </title> 
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" 
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+            crossorigin="anonymous">
+        <script 
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+            crossorigin="anonymous">
+        </script>
+    </head>
+    
+    <body>
+        <div class = "container-1">
+            <h2> First Challenge - Your age in days</h2>
+
+            <div class = "flex-box-container-1">
+                <div>
+                    <button class = "btn btn-primary" onclick="ageInDays()" > Click Me </button>
+                </div>
+                <div>
+                    <button class = "btn btn-danger" onclick="reset()" > Reset </button>
+                </div>
+            </div>
+
+            <div class = "flex-box-container-1">
+                <div id = "flex-box-result"></div>
+            </div>
+        </div> 
+
+        <!-- second Challenge -->
+        <div class = "container-2">
+            <h2> Second Challenge - Generate Cats</h2>
+            <button class = "btn btn-success" onclick="generateCat()"> Generate</button>
+            <div class = "flex-box-container-2" id ="catGen">
+            </div>
+        </div>
+
+        <!-- Third Challenge -->
+
+        <div class = "container-3">
+            <h2> Third Challenge - Rock paper scissors</h2>
+            <div class="flex-box-3" id = "flex-box">
+                <img id="rock" height=150 width=150 onclick="rpsGame(this)" src = "pics/rock.jpg">
+                <img id="paper" height=150 width=150 onclick="rpsGame(this)" src = "pics/paper.jpg" >
+                <img id="scissors" height=150 width=150 onclick="rpsGame(this)" src = "pics/scissors.jpg"> 
+            </div>
+
+        </div>
+    </body>
+
+    <!-- Fourth challenge -->
+    <div class= "container-4">
+        <div class="flex-box-4">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+
+            <button class="btn btn-primary">FaceBook1</button>
+            <button class="btn btn-danger">Youtube!</button>
+            <button class="btn btn-warning">Yahoo!</button>
+            <button class="btn btn-success">Google!</button>
+        </div>
+    </div>
+
+    <!-- Fifth Challenge -->
+    <div class= "container-5">
+        <h2> Challenge-5: BlackJack </h2>
+        <h3> <span id="blackjack-result">Let's Play</span></h3>
+        <div class="flex-blackjack-row-1">
+            <div id="your-box">
+                <h2>You: <span id="your-result"> 0 </span></h2>
+            </div>
+
+            <div id="dealer-box">
+                <h2>Dealer: <span id="dealer-result"> 0 </span></h2>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-2">
+            <div>
+                <button class="btn-lg btn-primary mr-2" id="hitButton"> HIT </button>
+                <button class="btn-lg btn-warning mr-2" id="standButton"> STAND </button>
+                <button class="btn-lg btn-danger" id="dealButton"> DEAL </button>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-3">
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+                <tr>
+                    <td><span id="wins"> 0 </span></td>
+                    <td><span id="losses"> 0 </span></td>
+                    <td><span id="draws"> 0 </span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src = "cleverJavascript.js" >
+        
+    </script>
+</html>
